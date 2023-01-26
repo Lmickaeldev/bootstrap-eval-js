@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container-1">
+            <h1 >
+                l'ensemble de l'évaluation est resumé a travers ces 4 bouton 
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md 3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                      exercice 1
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">calcul de l'ages</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+// Variables pour stocker les comptages <br>
+let dessous20 = 0;<br>
+let entre20et40 = 0;<br>
+let dessus40 = 0;<br>
+
+// Boucle pour demander les âges successifs<br>
+while (true) {<br>
+    // Saisie de l'âge<br>
+    var age = parseInt(prompt("Entrez l'âge :"));<br>
+    // Vérification de l'âge<br>
+    if (age < 20) {<br>
+        dessous20++;<br>
+    } else if (age >= 20 && age <= 40) {<br>
+        entre20et40++;<br>
+    } else if (age > 40) {<br>
+        dessus40++;<br>
+    }
+    // Condition d'arrêt<br>
+    if (age >= 100) {<br>
+        break;
+    }}<br>
+
+// Affichage des résultats
+document.write("Nombre de personnes d'ages  inférieur a 20 ans : " + dessous20+"");<br>
+document.write("Nombre de personnes d'ages compris entre 20 ans et 40 ans : " + entre20et40+"");<br>
+document.write("Nombre de personnes d'ages supérieur a 40 ans : " + dessus40);<br>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fermé</button>
+                            <button type="button"id="test1" class="btn btn-primary">test</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <h5>Calcul du nombre de jeunes, de moyens et de vieux</h5>
+                    <p>Il s'agit de dénombrer les personnes d'âge strictement inférieur à 20 ans, les personnes d'âge strictement supérieur à 40 ans et celles dont l'âge est compris entre 20 ans et 40 ans (20 ans et 40 ans y compris).
+
+                      Le programme doit demander les âges successifs.
+                      
+                      Le comptage est arrêté dès la saisie d'un centenaire. Le centenaire est compté.
+                      
+                      Donnez le programme Javascript correspondant qui affiche les résultats.</p>
+                      <span id="resultat1"></span>
+                </div>
+                <div class="col-md 3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                      exercice 2
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">table de multiplication</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            n=prompt("donnez un nombre")<br>
+                            function multiplication(n)<br>
+                            {
+                                for(i=0;i <= 10;i++)<br>
+                                {
+                                    let d= (n*i)<br>
+        
+                                document.write(n+"x"+i+"="+d+"<br>")<br>
+    
+                               }
+
+                            }
+                            multiplication(n)<br>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fermé</button>
+                            <button type="button" id="test2" class="btn btn-primary">test</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    <h5>Table de multiplication</h5>
+                    <p><br>Ecrivez une fonction qui affiche une table de multiplication.
+
+                      Votre fonction doit prendre un paramètre qui permet d'indiquer quelle table afficher.
+                      
+                      Par exemple, TableMultiplication(7) doit afficher :
+                      <br>
+                      1 x 7 = 7
+                      <br>
+                      2 x 7 = 14
+                      <br>z
+                      3 x 7 = 21 ...</p>
+                </div>
+                <div class="col-md 3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                      exercice 3
+                    </button>
+                    
+                    
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">recherche d'un prénom
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            let table = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];<br>
+                            console.table(table)<br>
+                           let Prenom = prompt("devinez le prenom")<br>
+                           let index = table.indexOf(Prenom)<br>
+                           if (index!== -1){<br>
+                               let i=index;i <table.length-1 ;i++;
+                               table[i]=table[i+1];><br>
+                               table[table.length-1]="";<br>
+                               document.write("bravo!!"+Prenom+" a été trouvé "+"<br>")<br>
+                               alert(table)
+                               
+                           }<br>
+                           else<br>
+                           alert("ERREUR "+Prenom+" n'existe pas dans le tableau.")<br>
+                           
+                           tab[i] devien tab[-1]
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fermé</button>
+                            <button type="button" id="test3" class="btn btn-primary">test</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <h5>recherche d'un prénom</h5>
+                    <p><br>Un prénom est saisi au clavier. On le recherche dans le tableau tab donné ci-après.
+
+                      Si le prénom est trouvé, on l'élimine du tableau en décalant les cases qui le suivent, et en mettant à blanc la dernière case. Si le prénom n'est pas trouvé un message d'erreur apparait et aucun prénom ne se supprime.
+                      
+                       var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];</p>
+                </div>
+                <div class="col-md 3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      exercice 4
+                    </button>
+                    
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">calcul d'une commande</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            const pu= parseFloat(prompt("entrez un prix"))<br>
+const qtecom=parseInt(prompt("entrez un nombre de commande"));<br>
+//calcul du total<br>
+tot =(pu*qtecom)<br>
+document.write("le total est de"+tot+"euros"+"<br><br>")<br>
+//calcul de la remise<br>
+if (tot<=100 )<br>
+{
+    rem=0
+}
+else if ((tot>=100)&&(tot<=200) ){
+    rem=0.05
+}
+else if (tot>200 ){
+    rem=0.1
+}<br>
+totrem=tot-(tot*rem)<br>
+document.write("total remisé est de"+" "+totrem+"<br><br>")<br>
+//calcul du frais de port<br>
+ let port=0<br>
+if(totrem>500)<br>
+{
+    port=0<br>
+}
+else if (totrem<500)<br>
+{
+    
+    port=(totrem*0.02)<br>
+     
+}
+if(port>6)<br>
+    {port=(totrem*0.02)}<br>
+    else if(port<6)<br>
+    {port=6}   <br>
+document.write("total de la comande"+"<br>"+"(total+remise) "+totrem+" euros<br>"+"plus les frais de port de "+port.toFixed(2)+" est de "+(port+totrem).toFixed(2)+"euros")<br>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fermé</button>
+                            <button type="button" id="test4" class="btn btn-primary">test</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h5>total d'une commande</h5>
+                    <p><br>A partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant la remise REM et le port PORT, sachant que :
+
+                      TOT = ( PU * QTECOM )
+                      la remise est de 5% si TOT est compris entre 100 et 200 € et de 10% au-delà
+                      le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €. Dans le cas contraire, le port est de 2%
+                      la valeur minimale du port à payer est de 6 €
+                  
+                  Testez tous les cas possibles afin de vous assurez que votre script fonctionne.
+                  
+                  Ci-dessous, un jeu de tests :
+                  
+                      Saisir 600 € et quantité = 1 : remise 10% (-60 €) soit 540,00 et frais port = 0; à payer : 540 €
+                      Saisir 501 € et quantité = 1 : remise 10% (-50,1 €) soit 450,90 et frais port 2% (de 450,90 €) soit +9,01 € ; à payer : 450,90+9.01 = 459,91 €.
+                      Saisir 100 € et quantité = 2 : 200 € donc remise 5% soit 190 € et frais de port 2% soit 3,8 € mini 6 €; à payer : 190+6 = 196 €
+                      Saisir 3 € et quantité = 1 : remise 0, frais de port 2% soit 0.06 € donc le minimum de 6 € s'applique; à payer : 3+6 = 9 €
+                  </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="/assets/javascript/test.js"></script>
+<script src="./assets/javascript/test.js"></script>
+</body>
+</html>

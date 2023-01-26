@@ -1,0 +1,40 @@
+body{
+    background: #000;
+}
+.container-1 h1
+{
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline blue;
+}
+.container{
+    padding: 60px 30px 0 30px;
+    text-align: center;  
+    background-color: antiquewhite; 
+}
+.col-md h5
+{
+    color: #000;
+    padding: 20px 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.col-md p{
+    text-align: start;
+}
+.row{
+    position: relative;
+    display: flex;
+    justify-items: center;
+}
+
+
+
+
+
+.modal-dialog
+{
+    text-align: start;
+}
